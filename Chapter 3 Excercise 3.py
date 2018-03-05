@@ -11,20 +11,21 @@ Score   Grade
 '''
 
 try:
-  if num >=1.00000001:
-    print('Error: only numbers 0.0 to 1.0')
-  elif num >= .9:
-    print('This grade is an A')
-  elif num >= .8:
-    print('This grade is an B')
-  elif num >= .7:
-    print('This grade is an C')
-  elif num >= .6:
-    print('This grade is an D')
-  elif num <= .59:
-    print('This grade is an F')
-  elif num >= 0:
-    print('Error')
+    inp = input("Enter a number between 0.0 and 1.0: ")
+    score = float(inp)
+    if (score >= 1.0):
+        print("That is a bad input.")
+        exit()
+    elif (score >= 0.9):
+        print("A")
+    elif (score >= 0.8):
+        print("B")
+    elif (score >= 0.7):
+        print("C")
+    elif (score >= 0.6):
+        print("D")
+    else:
+        print("F") 
 except:
-  print ('error_msg_invalid')
-  num = input('Enter a score between 0.0 and 1.0: ')
+    print("Please enter numerical numbers")
+    exit()
