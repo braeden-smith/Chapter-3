@@ -13,7 +13,7 @@ Score   Grade
 try:
     inp = input("Enter a number between 0.0 and 1.0: ")
     score = float(inp)
-    if (score >= 1.0):
+    if (score > 1.0):
         print("That is a bad input.")
         exit()
     elif (score >= 0.9):
